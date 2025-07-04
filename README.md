@@ -1,21 +1,22 @@
-
 # 🧑‍💻 Product Management Web App (CRUD with JSON Server)
 
 This project is a simple web application that lets you **Create**, **Read**, **Update**, and **Delete** products using a fake server called **JSON Server**.
 
 🗂️ The app uses:
 - **HTML** to build the page.
-- **CSS** to add basic style.
-- **JavaScript** to connect with the server.
+- **CSS** to add a clean and modern design.
+- **JavaScript** to connect with the server and manage logic.
 
 ---
 
 ## ✅ What can you do?
 
-- Add a new product (name + price).
-- See a list of all products.
-- Edit any product.
-- Delete a product.
+- ✅ Add a new product (name + price)
+- ✅ See a list of all products
+- ✅ Edit any product (name and price)
+- ✅ Delete a product
+- ✅ Prevent adding **duplicate products** (even if uppercase/lowercase is different)
+- ✅ Enjoy a responsive and styled layout with a **background image**
 
 ---
 
@@ -31,7 +32,7 @@ Then, open a terminal and run:
 npm install -g json-server
 ```
 
-### 2. Create `db.json` file
+### 2. Create the `db.json` file
 
 Example content:
 
@@ -46,42 +47,47 @@ Example content:
 
 ### 3. Start the server
 
-In the same folder as `db.json`, run:
+In the same folder where `db.json` is located, run:
 
 ```bash
 json-server --watch db.json
 ```
 
-This starts a fake API on `http://localhost:3000`.
+This will start a fake API at `http://localhost:3000`.
 
 ### 4. Open the app
 
-Just open `index.html` in your browser.
+Open the file `index.html` in your browser.
 
-You can:
-- Add a product
-- Edit it (click ✏️)
-- Delete it (click 🗑️)
+You can now:
+- ✅ Add products using the form
+- ✏️ Edit them with the button
+- 🗑️ Delete them easily
+- 🚫 Get a warning if you try to add the same product again (even with different letter case)
 
 ---
 
 ## 📁 Files
 
-- `index.html` – The main page
-- `frontend.js` – The JavaScript logic
-- `db.json` – The fake product database
+- `index.html` – Main page with the structure
+- `frontend.js` – JavaScript with all the logic
+- `public/style.css` – Styled layout with background image
+- `db.json` – Fake product database
 
 ---
 
 ## 🧠 Learn and Practice
 
-This project helps you learn:
+This project helps you learn and practice:
 
-- How to use HTML forms
-- How to use Fetch API in JavaScript
-- How CRUD operations work
-- How to work with fake APIs
+- Using **HTML forms**
+- Making API calls with the **Fetch API**
+- Implementing full **CRUD functionality**
+- Validating user input
+- Handling duplicate data
+- Writing clean **JavaScript functions**
+- Organizing files for a real project structure
 
 ---
 
-Made for learning and practice with love ❤️
+Made for learning and practice with 💻 & ❤️
