@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>📦 Gestión de Productos</h1>
+
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="number" id="precio" placeholder="Precio" required />
+    <button type="submit">Agregar Producto</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="lista-productos"></tbody>
+  </table>
+
+  <script src="frontend.js"></script>
+</body>
+</html>
